@@ -1,0 +1,39 @@
+
+body{
+    
+ 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+    
+}
+section::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:url('https://picsum.photos/1200/1200') ;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+div{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    
+}
