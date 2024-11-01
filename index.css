@@ -11,7 +11,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
 
@@ -21,8 +21,14 @@ section::before{
     content: '';
     position: absolute;
     inset: 0;
-    background-image:url('https://picsum.photos/1200/1200') ;
-    background-size: cover;
+    background-image:url('./img/chuck.jfif') ;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-position: bottom;
+    width: 100vw;
+    height: 100%;
     z-index: -1;
     opacity: 0.4;
 }
@@ -36,4 +42,29 @@ div{
     text-align: center;
     z-index: 1;
     
+}
+#button{
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+    border: 2px solid brown ;
+    cursor: pointer;
+    background-color: rgba(1,1,1,0.4);
+    transition:0.5s;
+}
+
+#button:hover{
+    scale:1.1;
+}
+
+#maior{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: red;
+    background-color: black;
 }
